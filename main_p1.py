@@ -29,7 +29,7 @@ print(separator)
 
 if username in users and users[username] == password:
     print(f"Welcome to the app, {username} \
-          \nWe have 3 texts to be analyzed. \
+          \nWe have {nr_of_texts} texts to be analyzed. \
           \n{separator}"
           )
 else:
