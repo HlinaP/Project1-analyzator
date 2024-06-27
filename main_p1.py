@@ -18,6 +18,9 @@ users= {
     "mike": "password123",
     "liz": "pass123"
 }
+# number of texts
+nr_of_texts = len(TEXTS)
+
 # login information
 username = input("username:")
 password = input("password:")
@@ -32,9 +35,6 @@ if username in users and users[username] == password:
 else:
     print("unregistered user, terminating the program..")
     sys.exit() # this command terminates the program
-
-# number of texts
-nr_of_texts = len(TEXTS)
 
 # select text 1 to nr_of_texts
 choice = (input(f"Enter a number btw. 1 and {nr_of_texts} to select: "))
