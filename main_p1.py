@@ -53,7 +53,7 @@ if choice.isdigit():
         nr_of_words = len(words)
 
         # number of words starting with a capital letter
-        titlecase = sum(1 for word in words if word.istitle())
+        titlecase = sum(1 for word in words if word[0].isupper())
 
         # number of capitalized words
         uppercase = sum(1 for word in words if word.isalpha() \
