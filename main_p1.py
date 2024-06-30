@@ -82,7 +82,7 @@ if choice.isdigit():
         occur_of_words = {} # frequency of different word lengths in the text
 
         for word in words:
-            word = word.strip(".,")
+            word = word.strip('''?,:._-"'!/()[{/*-+ˇ^°;}]''')
             lenght = len(word)
             if lenght not in occur_of_words:
                 occur_of_words[lenght] = 1
